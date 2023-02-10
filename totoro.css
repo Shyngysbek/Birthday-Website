@@ -1,0 +1,409 @@
+/* Totoro Birthday Hat */
+
+.totoro-wrapper {
+    width: 370px;
+    min-width: 370px;
+    height: 470px;
+    min-height: 470px;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    right: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head {
+    background: #a7a9ac;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    position: absolute;
+    margin: auto;
+    top: 18%;
+    left: 53px;
+    border: 7px solid #FFF;
+}
+
+.head .birthday-hat {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 37px solid transparent;
+    border-right: 37px solid transparent;
+    border-bottom: 85px solid #f5a8b9;
+    left: 101px;
+    top: -79px;
+    transform: rotate(10deg);
+    z-index: -1;
+}
+
+.head .birthday-hat::before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #fcec82;
+    border-radius: 50%;
+    left: -6px;
+    top: -8px;
+}
+
+.head .birthday-hat .stripe {
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    background: #fcec82;
+    border-radius: 50%;
+}
+
+.head .birthday-hat .stripe.one {
+    top: 18px;
+    left: -5px;
+}
+
+.head .birthday-hat .stripe.two {
+    top: 32px;
+    left: 4px;
+}
+
+.head .birthday-hat .stripe.three {
+    top: 42px;
+    left: -15px;
+}
+
+.head .birthday-hat .stripe.four {
+    top: 48px;
+    left: 4px;
+}
+
+.head .birthday-hat .stripe.five {
+    top: 59px;
+    left: -15px;
+}
+
+.head .birthday-hat .stripe.six {
+    top: 65px;
+    left: 6px;
+}
+
+.head .ears,
+.head .block {
+    position: relative;
+}
+
+.head .ears::before,
+.head .ears::after {
+    content: "";
+    position: absolute;
+    border: 7px solid #FFF;
+    background: #a7a9ac;
+    width: 40px;
+    height: 70px;
+    top: -69px;
+    border-radius: 100% 100% 30px 30px;
+}
+
+.head .ears::before {
+    left: 11%;
+    transform: rotate(-13deg);
+}
+
+.head .ears::after {
+    right: 11%;
+    transform: rotate(13deg);
+}
+
+.head .block::before {
+    content: "";
+    position: absolute;
+    background: #a7a9ac;
+    left: 21.5%;
+    width: 25px;
+    height: 20px;
+    transform: rotate(-18deg);
+}
+
+.head .block::after {
+    content: "";
+    position: absolute;
+    background: #a7a9ac;
+    right: 21.5%;
+    width: 25px;
+    height: 20px;
+    transform: rotate(18deg);
+    z-index: 2;
+}
+
+.head .eyes {
+    position: relative;
+    z-index: 3;
+}
+
+.head .eyes .left-eye {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #FFF;
+    top: 50px;
+    left: 40px;
+}
+
+.head .eyes .right-eye {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #FFF;
+    top: 50px;
+    right: 40px;
+}
+
+.head .eyes .left-eye::before,
+.head .eyes .right-eye::before {
+    content: "";
+    position: absolute;
+    background: #5e5d5d;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    top: 10px;
+    left: 11px;
+}
+
+.head .eyes .left-eye::after,
+.head .eyes .right-eye::after {
+    content: "";
+    position: absolute;
+    background: #FFF;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    top: 13px;
+    left: 22px;
+}
+
+.head .nose {
+    position: absolute;
+    width: 24px;
+    height: 13px;
+    top: 27%;
+    left: 46%;
+    z-index: 3;
+    background: #5e5d5d;
+    border-radius: 12px 12px 40px 40px;
+    z-index: 3;
+}
+
+.whiskers {
+    position: relative;
+}
+
+.whiskers .whisker {
+    position: absolute;
+    width: 10px;
+    height: 50px;
+    border-radius: 10%;
+    background: red;
+    position: absolute;
+    width: 6px;
+    height: 65px;
+    border-radius: 50%;
+    background: #5e5d5d;
+    z-index: 3;
+}
+
+.whiskers .whisker--one {
+    transform: rotate(-75deg);
+    top: 35px;
+    left: -10px;
+}
+
+.whiskers .whisker--one-a {
+    transform: rotate(-75deg);
+    top: 29px;
+    left: -17px;
+    z-index: 0;
+    border: 6px solid #FFF;
+}
+
+.whiskers .whisker--two {
+    transform: rotate(-80deg);
+    top: 55px;
+    left: -15px;
+}
+
+.whiskers .whisker--two-a {
+    transform: rotate(-80deg);
+    top: 49px;
+    left: -22px;
+    border: 6px solid #FFF;
+    z-index: 0;
+}
+
+.whiskers .whisker--three {
+    transform: rotate(-85deg);
+    top: 75px;
+    left: -18px;
+}
+
+.whiskers .whisker--three-a {
+    transform: rotate(-85deg);
+    top: 69px;
+    left: -25px;
+    border: 6px solid #FFF;
+    z-index: 0;
+}
+
+.whiskers .whisker--four {
+    transform: rotate(75deg);
+    top: 35px;
+    right: -10px;
+}
+
+.whiskers .whisker--four-a {
+    transform: rotate(75deg);
+    top: 29px;
+    right: -17px;
+    border: 6px solid #FFF;
+    z-index: 0;
+}
+
+.whiskers .whisker--five {
+    transform: rotate(80deg);
+    top: 55px;
+    right: -15px;
+}
+
+.whiskers .whisker--five-a {
+    transform: rotate(80deg);
+    top: 49px;
+    right: -22px;
+    border: 6px solid #FFF;
+    z-index: 0;
+}
+
+.whiskers .whisker--six {
+    transform: rotate(85deg);
+    top: 75px;
+    right: -18px;
+}
+
+.whiskers .whisker--six-a {
+    transform: rotate(85deg);
+    top: 69px;
+    right: -25px;
+    border: 6px solid #FFF;
+    z-index: 0;
+}
+
+.body {
+    width: 300px;
+    height: 310px;
+    background: #a7a9ac;
+    border-radius: 100%;
+    position: relative;
+    margin-top: 110px;
+    border: 7px solid #FFF;
+}
+
+.body::before,
+.body::after {
+    content: "";
+    position: absolute;
+    background: #a7a9ac;
+    width: 165px;
+    height: 150px;
+}
+
+.body::before {
+    top: -14px;
+    border-radius: 50%;
+    left: 22px;
+    transform: rotate(-37deg);
+}
+
+.body::after {
+    top: -14px;
+    border-radius: 50%;
+    right: 22px;
+    transform: rotate(37deg);
+}
+
+.body .tummy {
+    background: #FFF;
+    width: 250px;
+    height: 210px;
+    position: absolute;
+    border-radius: 50%;
+    left: 8.5%;
+    top: 23%;
+    z-index: 3;
+}
+
+.body .tummy .wrinkles {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-color: #5e5d5d;
+    border-radius: 50%;
+}
+
+.body .tummy .wrinkles::before {
+    content: "";
+    position: absolute;
+    background: #FFF;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    top: 11px;
+    border-radius: 50%;
+}
+
+.body .tummy .wrinkles.wrinkle--one {
+    left: 50px;
+    top: 35px;
+}
+
+.body .tummy .wrinkles.wrinkle--two {
+    left: 104px;
+    top: 28px;
+}
+
+.body .tummy .wrinkles.wrinkle--three {
+    right: 50px;
+    top: 35px;
+}
+
+.body .tummy .wrinkles.wrinkle--four {
+    left: 25px;
+    top: 70px;
+}
+
+.body .tummy .wrinkles.wrinkle--five {
+    left: 79px;
+    top: 70px;
+}
+
+.body .tummy .wrinkles.wrinkle--six {
+    right: 79px;
+    top: 70px;
+}
+
+.body .tummy .wrinkles.wrinkle--seven {
+    right: 25px;
+    top: 70px;
+}
+
+.credit {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 10px;
+    position: absolute;
+    bottom: -5px;
+    left: 16%;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
